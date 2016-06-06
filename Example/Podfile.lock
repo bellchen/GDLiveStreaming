@@ -27,25 +27,28 @@ PODS:
 
 DEPENDENCIES:
   - GDLiveStreaming (from `../`)
-  - glm (from `https://raw.githubusercontent.com/goodow/GDLiveStreaming/master/glm.podspec`)
-  - VideoCore (from `../VideoCore`)
+  - glm (from `https://raw.githubusercontent.com/bellchen/GDLiveStreaming/master/glm.podspec`)
+  - VideoCore (from `https://github.com/bellchen/VideoCore.git`)
 
 EXTERNAL SOURCES:
   GDLiveStreaming:
     :path: ../
   glm:
-    :podspec: https://raw.githubusercontent.com/goodow/GDLiveStreaming/master/glm.podspec
+    :podspec: https://raw.githubusercontent.com/bellchen/GDLiveStreaming/master/glm.podspec
   VideoCore:
-    :path: ../VideoCore
+    :git: https://github.com/bellchen/VideoCore.git
+
+CHECKOUT OPTIONS:
+  VideoCore:
+    :commit: 610d1e4bdb841da32df33e0bd1aa019b3a448bb2
+    :git: https://github.com/bellchen/VideoCore.git
 
 SPEC CHECKSUMS:
   boost: 6c5c8d8daef26ac83c1e1c00ad14de62b80161d7
-  GDLiveStreaming: 9784c6bd2195af66f355f3b92f578fbf5ac8d577
+  GDLiveStreaming: 8ae06974661c82f6e6b71fa516e142c1f312797b
   glm: af43e1f7bcd3dba39023e5044609070f7b5e6053
   GPUImage: 733a5f0fab92df9de1c37ba9df520a833ccb406d
   UriParser-cpp: cbbe00080ee432ec4833dca863a7fc83adc9b01a
   VideoCore: a0d0392c9179a8aafbaf6c9e0278706c8ecb4d1a
 
-PODFILE CHECKSUM: fbe954d664266a0cfa7b08bba09bc8be7a22738d
-
-COCOAPODS: 1.0.0.rc.2
+COCOAPODS: 0.38.2

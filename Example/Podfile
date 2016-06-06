@@ -1,8 +1,5 @@
-#use_frameworks!
-
-# pod 'VideoCore', :git => 'https://github.com/goodow/VideoCore.git'
-pod 'glm', :podspec => 'https://raw.githubusercontent.com/goodow/GDLiveStreaming/master/glm.podspec'
-pod 'VideoCore', path: '../VideoCore'
+pod 'VideoCore', :git => 'https://github.com/bellchen/VideoCore.git'
+pod 'glm', :podspec => 'https://raw.githubusercontent.com/bellchen/GDLiveStreaming/master/glm.podspec'
 
 target 'GDLiveStreaming_Example' do
   pod 'GDLiveStreaming', :path => '../'
